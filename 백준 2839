@@ -1,0 +1,11 @@
+n = int(input())
+
+count = -1
+
+for five in range(n // 5, -1, -1):
+    remaining = n - 5 * five
+    if remaining % 3 == 0:
+        count = five + (remaining // 3)
+        break
+
+print(count)
