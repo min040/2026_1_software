@@ -1,0 +1,10 @@
+current = 0
+maximum = 0
+
+for _ in range(4):
+    out_num, in_num = map(int, input().split())
+    current -= out_num
+    current += in_num
+    maximum = max(maximum, current)
+
+print(maximum)
